@@ -71,6 +71,11 @@
     </div>
 
     <div class="circle-area">
+        <div class="circle-controls">
+            <h2>JIMI Board</h2>
+            <button onclick="resetBoard()">Reset</button>
+            <input type="range" id="tuning-slider" min="0" max="100" value="50">    
+        </div>
         <div id="circle" class="circle">
             <!-- Circle of 24 buttons with musical notes in the Circle of Alternating Major and Minor Thirds -->
             <button class="circle-btn" onclick="setScale(0)">C</button>

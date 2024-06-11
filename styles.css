@@ -35,15 +35,18 @@
     text-align: center;
 }
 
+.circle-area {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .circle {
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: auto;
     width: 400px;
     height: 400px;
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .circle-btn {

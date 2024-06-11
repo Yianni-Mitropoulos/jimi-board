@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jimi Board</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="keyboard">
+        <!-- First Octave -->
+        <button class="key" onclick="playSound(0)">C</button>
+        <button class="key" onclick="playSound(1)">C#</button>
+        <button class="key" onclick="playSound(2)">D</button>
+        <button class="key" onclick="playSound(3)">D#</button>
+        <button class="key" onclick="playSound(4)">E</button>
+        <button class="key" onclick="playSound(5)">F</button>
+        <button class="key" onclick="playSound(6)">F#</button>
+        <button class="key" onclick="playSound(7)">G</button>
+        <button class="key" onclick="playSound(8)">G#</button>
+        <button class="key" onclick="playSound(9)">A</button>
+        <button class="key" onclick="playSound(10)">A#</button>
+        <button class="key" onclick="playSound(11)">B</button>
+        
+        <!-- Second Octave -->
+        <button class="key" onclick="playSound(12)">C</button>
+        <button class="key" onclick="playSound(13)">C#</button>
+        <button class="key" onclick="playSound(14)">D</button>
+        <button class="key" onclick="playSound(15)">D#</button>
+        <button class="key" onclick="playSound(16)">E</button>
+        <button class="key" onclick="playSound(17)">F</button>
+        <button class="key" onclick="playSound(18)">F#</button>
+        <button class="key" onclick="playSound(19)">G</button>
+        <button class="key" onclick="playSound(20)">G#</button>
+        <button class="key" onclick="playSound(21)">A</button>
+        <button class="key" onclick="playSound(22)">A#</button>
+        <button class="key" onclick="playSound(23)">B</button>
+    </div>
+    
+    <div class="circle">
+        <!-- Circle of 24 buttons with musical notes in the Circle of Alternating Major and Minor Thirds -->
+        <button class="circle-btn" onclick="setScale(0)">C</button>
+        <button class="circle-btn" onclick="setScale(1)">e</button>
+        <button class="circle-btn" onclick="setScale(2)">G</button>
+        <button class="circle-btn" onclick="setScale(3)">b</button>
+        <button class="circle-btn" onclick="setScale(4)">D</button>
+        <button class="circle-btn" onclick="setScale(5)">f</button>
+        <button class="circle-btn" onclick="setScale(6)">A</button>
+        <button class="circle-btn" onclick="setScale(7)">c</button>
+        <button class="circle-btn" onclick="setScale(8)">E</button>
+        <button class="circle-btn" onclick="setScale(9)">g</button>
+        <button class="circle-btn" onclick="setScale(10)">B</button>
+        <button class="circle-btn" onclick="setScale(11)">d</button>
+        <button class="circle-btn" onclick="setScale(12)">F#</button>
+        <button class="circle-btn" onclick="setScale(13)">a</button>
+        <button class="circle-btn" onclick="setScale(14)">C#</button>
+        <button class="circle-btn" onclick="setScale(15)">e#</button> <!-- Assuming enharmonic equivalents where needed -->
+        <button class="circle-btn" onclick="setScale(16)">G#</button>
+        <button class="circle-btn" onclick="setScale(17)">b#</button> <!-- This would typically be C -->
+        <button class="circle-btn" onclick="setScale(18)">D#</button>
+        <button class="circle-btn" onclick="setScale(19)">f#</button>
+        <button class="circle-btn" onclick="setScale(20)">A#</button>
+        <button class="circle-btn" onclick="setScale(21)">c#</button>
+        <button class="circle-btn" onclick="setScale(22)">F</button> <!-- This would typically be F -->
+        <button class="circle-btn" onclick="setScale(23)">a</button>
+    </div>    
+
+<script src="script.js"></script>
+</body>
+</html>

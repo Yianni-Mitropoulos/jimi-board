@@ -6,36 +6,70 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="keyboard" class="keyboard">
-        <!-- First Octave -->
-        <button class="key" onclick="playSound(0)">C</button>
-        <button class="key" onclick="playSound(1)">C#</button>
-        <button class="key" onclick="playSound(2)">D</button>
-        <button class="key" onclick="playSound(3)">D#</button>
-        <button class="key" onclick="playSound(4)">E</button>
-        <button class="key" onclick="playSound(5)">F</button>
-        <button class="key" onclick="playSound(6)">F#</button>
-        <button class="key" onclick="playSound(7)">G</button>
-        <button class="key" onclick="playSound(8)">G#</button>
-        <button class="key" onclick="playSound(9)">A</button>
-        <button class="key" onclick="playSound(10)">A#</button>
-        <button class="key" onclick="playSound(11)">B</button>
-        
-        <!-- Second Octave -->
-        <button class="key" onclick="playSound(12)">C</button>
-        <button class="key" onclick="playSound(13)">C#</button>
-        <button class="key" onclick="playSound(14)">D</button>
-        <button class="key" onclick="playSound(15)">D#</button>
-        <button class="key" onclick="playSound(16)">E</button>
-        <button class="key" onclick="playSound(17)">F</button>
-        <button class="key" onclick="playSound(18)">F#</button>
-        <button class="key" onclick="playSound(19)">G</button>
-        <button class="key" onclick="playSound(20)">G#</button>
-        <button class="key" onclick="playSound(21)">A</button>
-        <button class="key" onclick="playSound(22)">A#</button>
-        <button class="key" onclick="playSound(23)">B</button>
+    <div class="keyboard">
+
+        <div id="greyboard" class="greyboard">
+            <!-- First Octave -->
+            <button class="grey key" onclick="playMicrotonalSound(0)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(1)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(2)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(3)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(4)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(5)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(6)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(7)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(8)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(9)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(10)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(11)"></button>
+            
+            <!-- Second Octave -->
+            <button class="grey key" onclick="playMicrotonalSound(12)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(13)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(14)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(15)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(16)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(17)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(18)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(19)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(20)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(21)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(22)"></button>
+            <button class="grey key" onclick="playMicrotonalSound(23)"></button>
+        </div>
+
+        <div id="whiteboard" class="whiteboard">
+            <!-- First Octave -->
+            <button class="white key" onclick="playSound(0)">C</button>
+            <button class="white key" onclick="playSound(1)">C#</button>
+            <button class="white key" onclick="playSound(2)">D</button>
+            <button class="white key" onclick="playSound(3)">D#</button>
+            <button class="white key" onclick="playSound(4)">E</button>
+            <button class="white key" onclick="playSound(5)">F</button>
+            <button class="white key" onclick="playSound(6)">F#</button>
+            <button class="white key" onclick="playSound(7)">G</button>
+            <button class="white key" onclick="playSound(8)">G#</button>
+            <button class="white key" onclick="playSound(9)">A</button>
+            <button class="white key" onclick="playSound(10)">A#</button>
+            <button class="white key" onclick="playSound(11)">B</button>
+            
+            <!-- Second Octave -->
+            <button class="white key" onclick="playSound(12)">C</button>
+            <button class="white key" onclick="playSound(13)">C#</button>
+            <button class="white key" onclick="playSound(14)">D</button>
+            <button class="white key" onclick="playSound(15)">D#</button>
+            <button class="white key" onclick="playSound(16)">E</button>
+            <button class="white key" onclick="playSound(17)">F</button>
+            <button class="white key" onclick="playSound(18)">F#</button>
+            <button class="white key" onclick="playSound(19)">G</button>
+            <button class="white key" onclick="playSound(20)">G#</button>
+            <button class="white key" onclick="playSound(21)">A</button>
+            <button class="white key" onclick="playSound(22)">A#</button>
+            <button class="white key" onclick="playSound(23)">B</button>
+            <button class="white key" onclick="playSound(24)">C</button>
+        </div>
     </div>
-    
+
     <div id="circle" class="circle">
         <!-- Circle of 24 buttons with musical notes in the Circle of Alternating Major and Minor Thirds -->
         <button class="circle-btn" onclick="setScale(0)">C</button>

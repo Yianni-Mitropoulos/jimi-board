@@ -1,23 +1,38 @@
 /* styles.css */
 .keyboard {
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.whiteboard {
+    display: flex;
+    justify-content: center;
+}
+
+.greyboard {
+    display: flex;
+    justify-content: center;
+}
+
+.white {
+    height: 120px;
+    background-color: white;
+    line-height: 120px;
+}
+
+.grey {
+    height: 80px;
+    background-color: rgb(197, 197, 197);
+    line-height: 80px;
+}
+
 .key {
     width: 60px;
-    height: 120px;
     margin: 5px;
     border: 1px solid black;
-    background-color: white;
     color: black;
     font-size: 16px;
     text-align: center;
-    line-height: 120px;
-}
-.key:active {
-    background-color: #ccc;
 }
 
 .circle {

@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="keyboard">
+    <div id="keyboard" class="keyboard">
         <!-- First Octave -->
         <button class="key" onclick="playSound(0)">C</button>
         <button class="key" onclick="playSound(1)">C#</button>
@@ -36,7 +36,7 @@
         <button class="key" onclick="playSound(23)">B</button>
     </div>
     
-    <div class="circle">
+    <div id="circle" class="circle">
         <!-- Circle of 24 buttons with musical notes in the Circle of Alternating Major and Minor Thirds -->
         <button class="circle-btn" onclick="setScale(0)">C</button>
         <button class="circle-btn" onclick="setScale(1)">e</button>
@@ -62,7 +62,7 @@
         <button class="circle-btn" onclick="setScale(21)">c#</button>
         <button class="circle-btn" onclick="setScale(22)">F</button> <!-- This would typically be F -->
         <button class="circle-btn" onclick="setScale(23)">a</button>
-    </div>    
+    </div>
 
 <script src="script.js"></script>
 </body>

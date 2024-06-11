@@ -52,19 +52,40 @@ function playSound(index) {
     }, 1500); // Stop after 1.5 seconds
 }
 
+keyboard      = document.getElementById("keyboard");
+circle        = document.getElementById("circle");
+circle_button = undefined
+
+set_jimiboard_key_class = (i, modular_relative_offset) => {
+    if (modular_relative_offset == 0 || modular_relative_offset == 4 || modular_relative_offset == 7) {
+        keyboard.children[i].classList.add('btn-emphasized');
+    } else {
+        keyboard.children[i].classList.remove('btn-emphasized');
+    }    
+}
+
 function setScale(index) {
+    if (circle_button) {
+        circle_button.classList.toggle('btn-emphasized');
+    }
+    circle_button = circle.children[index];
+    circle_button.classList.toggle('btn-emphasized');
     if (index % 2 == 0) {
         // Major scale
         offset = (7*Math.round(index/2)) % 12;
         for (let i=0; i<semitones.length; i++) {
-            semitones[i] = i + ji_corrections[mod(i - offset, 12)];
+            let modular_relative_offset = mod(i - offset, 12);
+            semitones[i] = i + ji_corrections[modular_relative_offset];
+            set_jimiboard_key_class(i, modular_relative_offset);
         }
     } else {
         // Minor scale
         index -= 1;
         offset = (11 + (7*Math.round(index/2))) % 12;
         for (let i=0; i<semitones.length; i++) {
-            semitones[i] = i - ji_corrections[mod(offset - i, 12)];
+            let modular_relative_offset = mod(offset - i, 12);
+            semitones[i] = i - ji_corrections[modular_relative_offset];
+            set_jimiboard_key_class(i, modular_relative_offset);
         }
     }
 }

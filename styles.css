@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .key {
     width: 60px;
@@ -26,6 +27,8 @@
     width: 400px;
     height: 400px;
     position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .circle-btn {
@@ -38,6 +41,10 @@
     text-align: center;
     line-height: 40px;
     font-size: 12px;
+}
+
+.btn-emphasized {
+    background-color: #50f050;
 }
 
 /* Calculate positions for circle buttons using CSS variables and trigonometric functions */
